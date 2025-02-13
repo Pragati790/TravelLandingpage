@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - TravelX</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex items-center justify-center h-screen bg-gradient-to-r from-blue-200 to-red-400 text-white">
+
+    <div class="bg-white text-gray-900 p-8 rounded-lg shadow-md w-96">
+        <h2 class="text-3xl font-bold text-center">Create an Account</h2>
+        <p class="text-center text-gray-600 mt-2">Join us and start your adventure!</p>
+        
+        <form id="signupForm" class="mt-6">
+            <input type="text" id="fullName" placeholder="Full Name" class="w-full border border-gray-300 p-3 rounded mt-3 focus:outline-none focus:ring-2 focus:ring-blue-400" required>
+            <input type="email" id="email" placeholder="Email" class="w-full border border-gray-300 p-3 rounded mt-3 focus:outline-none focus:ring-2 focus:ring-blue-400" required>
+            <input type="password" id="password" placeholder="Password" class="w-full border border-gray-300 p-3 rounded mt-3 focus:outline-none focus:ring-2 focus:ring-blue-400" required>
+            <input type="password" id="confirmPassword" placeholder="Confirm Password" class="w-full border border-gray-300 p-3 rounded mt-3 focus:outline-none focus:ring-2 focus:ring-blue-400" required>
+            
+            <button type="submit" class="bg-blue-600 text-white px-4 py-3 rounded w-full mt-4 hover:bg-blue-700">Sign Up</button>
+        </form>
+
+        <p class="text-center text-gray-600 mt-4">Already have an account? 
+            <a href="signin.html" class="text-blue-600 hover:underline">Sign In</a>
+        </p>
+    </div>
+
+    <script>
+        document.getElementById("signupForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            const fullName = document.getElementById("fullName").value;
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+            const confirmPassword = document.getElementById("confirmPassword").value;
+
+            if (password !== confirmPassword) {
+                alert("Passwords do not match!");
+                return;
+            }
+
+            // Save user data (Mock Database - Local Storage)
+            localStorage.setItem("userEmail", email);
+            localStorage.setItem("userPassword", password);
+            alert("Sign Up Successful! Please Sign In.");
+            window.location.href = "signin.html";
+        });
+    </script>
+
+</body>
+</html>
