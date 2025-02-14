@@ -3,20 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services - TravelX</title>
+    <meta name="description" content="Explore our premium travel services, including custom tour packages, luxury hotel bookings, and guided adventures worldwide.">
+    <meta name="keywords" content="travel services, tour packages, hotel booking, guided tours, adventure travel">
+    <meta name="author" content="TravelX">
+    <title>Our Services - TravelX</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gradient-to-r from-blue-300 to-red-400 text-white">
+<body class="bg-gradient-to-r from-blue-500 to-purple-600 text-white">
 
-    <header class="h-64 bg-cover bg-center flex items-center justify-center" 
-        style="background-image: url('https://source.unsplash.com/1600x900/?tourism');">
-        <h1 class="text-4xl font-bold bg-black bg-opacity-50 p-4 rounded">Our Services</h1>
+    <!-- Header / Hero Section -->
+    <header class="h-72 md:h-96 bg-cover bg-center flex flex-col items-center justify-center text-center px-4" 
+        style="background-image: url('https://t4.ftcdn.net/jpg/00/65/48/25/360_F_65482539_C0ZozE5gUjCafz7Xq98WB4dW6LAhqKfs.jpg');">
+        <h1 class="text-4xl md:text-5xl font-extrabold bg-black bg-opacity-60 p-4 rounded-lg">
+            Premium Travel Services
+        </h1>
+        <p class="mt-4 text-lg bg-black bg-opacity-50 px-6 py-2 rounded-md">
+            Explore breathtaking destinations with our world-class travel services.
+        </p>
     </header>
 
+    <!-- Services Section -->
     <section class="container mx-auto px-6 py-16 text-center">
-        <h2 class="text-3xl font-bold">What We Offer</h2>
-        <p class="mt-4">Custom tour packages, hotel bookings, and guided adventures.</p>
+        <h2 class="text-3xl md:text-4xl font-bold">What We Offer</h2>
+        <p class="mt-4 text-lg">From luxurious accommodations to customized travel experiences, we have you covered.</p>
+
+        <!-- Services Grid -->
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Service 1 -->
+            <div class="bg-white text-gray-800 rounded-lg shadow-lg p-6 hover:shadow-2xl transform hover:scale-105 transition duration-300">
+                <img src="https://t3.ftcdn.net/jpg/00/29/13/38/360_F_29133877_bfA2n7cWV53fto2BomyZ6pyRujJTBwjd.jpg" alt="Hotel Booking" class="rounded-md w-full">
+                <h3 class="text-xl font-bold mt-4">Luxury Hotel Booking</h3>
+                <p class="mt-2">Stay in top-rated hotels and resorts worldwide with exclusive deals.</p>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="bg-white text-gray-800 rounded-lg shadow-lg p-6 hover:shadow-2xl transform hover:scale-105 transition duration-300">
+                <img src="https://media.istockphoto.com/id/516449022/photo/lady-with-kayak.jpg?s=612x612&w=0&k=20&c=Yp-rzpmY_hbhpbTE38z6toouRKW-lAEN-ZvuWvH8kKE=" alt="Guided Tours" class="rounded-md w-full">
+                <h3 class="text-xl font-bold mt-4">Guided Adventure Tours</h3>
+                <p class="mt-2">Explore nature, historical sites, and exotic locations with our expert guides.</p>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="bg-white text-gray-800 rounded-lg shadow-lg p-6 hover:shadow-2xl transform hover:scale-105 transition duration-300">
+                <img src="https://tourinnepal.com/wp-content/uploads/2024/11/Family-tour10.jpg.webp" alt="Custom Tour Packages" class="rounded-md w-full">
+                <h3 class="text-xl font-bold mt-4">Custom Tour Packages</h3>
+                <p class="mt-2">Plan your dream vacation with personalized tour packages tailored to your needs.</p>
+            </div>
+        </div>
     </section>
+
+    <!-- Call to Action -->
+    <section class="text-center py-12 bg-white text-gray-800">
+        <h2 class="text-3xl font-bold">Ready to Explore?</h2>
+        <p class="mt-4">Book your next adventure with us today!</p>
+        <a href="contact.html" class="mt-6 inline-block bg-blue-600 hover:bg-blue-800 text-white px-6 py-3 rounded-lg text-lg font-semibold transition duration-300">
+            Contact Us
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white text-center py-6">
+        <p>&copy; 2025 TravelX. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
+
