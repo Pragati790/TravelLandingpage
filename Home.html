@@ -3,40 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore breathtaking destinations with our travel services. Book your adventure today!">
-    <title>Travel Landing Page</title>
+    <meta name="description" content="Explore breathtaking travel destinations with TravelX. Book your adventure today!">
+    <meta name="keywords" content="travel, tourism, adventure, vacation, tours, hotels">
+    <meta name="author" content="TravelX">
+    <title>Home | TravelX</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Smooth Mobile Menu Transition */
+        #mobileMenu {
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            transform: translateY(-100%);
+            opacity: 0;
+            display: none;
+        }
+        .mobile-menu-open {
+            transform: translateY(0);
+            opacity: 1;
+            display: block;
+        }
+    </style>
 </head>
-<body class="bg-gradient-to-r from-blue-500 to-purple-600 text-white">
+<body class="bg-gray-100">
 
-    <!-- Navbar -->
-    <nav class="bg-white bg-opacity-90 shadow-md py-4 fixed w-full top-0 z-50">
-        <div class="container mx-auto flex justify-between items-center px-6">
-            <a href="index.html" class="text-2xl font-bold text-blue-600">TravelX</a>
-            <div class="space-x-6 hidden md:flex">
-                <a href="index.html" class="hover:text-blue-600">Home</a>
-                <a href="about.html" class="hover:text-blue-600">About Us</a>
-                <a href="services.html" class="hover:text-blue-600">Services</a>
-                <a href="contact.html" class="hover:text-blue-600">Contact</a>
-                <a href="signin.html" class="bg-blue-600 text-white px-4 py-2 rounded">Sign In</a>
-                <a href="signup.html" class="border border-blue-600 px-4 py-2 rounded text-blue-600">Sign Up</a>
-            </div>
-        </div>
+  <!-- Navbar -->
+  <header class="bg-white shadow-md py-4 fixed w-full top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center px-6">
+        <!-- Logo -->
+        <a href="index.html" class="text-2xl font-bold text-blue-600">TravelX</a>
+
+        <!-- Desktop Menu -->
+        <nav class="hidden md:flex space-x-6">
+            <a href="index.html" class="hover:text-blue-600">Home</a>
+            <a href="about.html" class="hover:text-blue-600">About</a>
+            <a href="services.html" class="hover:text-blue-600">Services</a>
+            <a href="contact.html" class="hover:text-blue-600">Contact</a>
+            <a href="signin.html" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Sign In</a>
+            <a href="signup.html" class="border border-blue-600 px-4 py-2 rounded text-blue-600 hover:bg-blue-600 hover:text-white transition">Sign Up</a>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <button id="menuToggle" class="md:hidden text-blue-600 focus:outline-none">
+            <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
+            </svg>
+        </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <nav id="mobileMenu" class="absolute top-16 left-0 w-full bg-white py-4 shadow-md text-center">
+        <a href="index.html" class="block py-2 hover:text-blue-600">Home</a>
+        <a href="about.html" class="block py-2 hover:text-blue-600">About</a>
+        <a href="services.html" class="block py-2 hover:text-blue-600">Services</a>
+        <a href="contact.html" class="block py-2 hover:text-blue-600">Contact</a>
+        <a href="signin.html" class="block bg-blue-600 text-white px-4 py-2 rounded mx-auto w-2/3 mt-2">Sign In</a>
+        <a href="signup.html" class="block border border-blue-600 px-4 py-2 rounded text-blue-600 mx-auto w-2/3 mt-2">Sign Up</a>
     </nav>
+  </header>
 
-    <!-- Hero Section -->
-    <header class="bg-cover bg-center h-screen flex items-center justify-center text-white text-center px-6" 
-        style="background-image: url('https://source.unsplash.com/1600x900/?travel,adventure');">
-        <div class="bg-black bg-opacity-50 p-10 rounded-lg">
-            <h1 class="text-5xl font-bold">Explore the World with TravelX</h1>
-            <p class="mt-4 text-lg">Your adventure begins here. Discover breathtaking destinations.</p>
-            <a href="services.html" class="mt-6 inline-block bg-yellow-500 px-6 py-3 rounded text-lg hover:bg-yellow-600">
-                Start Your Journey
-            </a>
-        </div>
-    </header>
+  <!-- Hero Section -->
+  <section class="h-screen w-full flex flex-col items-center justify-center text-white text-center px-6 bg-cover bg-center bg-no-repeat relative" 
+      style="background-image: url('https://media.istockphoto.com/id/1297349747/photo/hot-air-balloons-flying-over-the-botan-canyon-in-turkey.jpg?s=612x612&w=0&k=20&c=kt8-RRzCDunpxgKFMBBjZ6jSteetNhhSxHZFvHQ0hNU=');">
+    
+    <!-- Glassmorphism Effect -->
+    <div class="bg-white bg-opacity-10 backdrop-blur-lg p-6 md:p-10 rounded-lg shadow-lg max-w-xl">
+        <h1 class="text-4xl md:text-5xl font-bold">Explore Breathtaking Destinations</h1>
+        <p class="mt-4 text-lg">Discover unforgettable experiences with TravelX.</p>
+        <a href="services.html" class="mt-6 inline-block bg-yellow-500 px-6 py-3 rounded text-lg hover:bg-yellow-600 transition">
+            Start Your Journey
+        </a>
+    </div>
 
-    <script src="script.js"></script>
+  </section>
+
+  <!-- JavaScript for Mobile Menu -->
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    menuToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('mobile-menu-open');
+    });
+
+    // Close menu when clicking a link
+    document.querySelectorAll('#mobileMenu a').forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.remove('mobile-menu-open');
+        });
+    });
+  </script>
+
 </body>
 </html>
