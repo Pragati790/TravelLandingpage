@@ -8,20 +8,6 @@
     <meta name="author" content="TravelX">
     <title>Home | TravelX</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        /* Smooth Mobile Menu Transition */
-        #mobileMenu {
-            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-            transform: translateY(-100%);
-            opacity: 0;
-            display: none;
-        }
-        .mobile-menu-open {
-            transform: translateY(0);
-            opacity: 1;
-            display: block;
-        }
-    </style>
 </head>
 <body class="bg-gray-100">
 
@@ -50,7 +36,7 @@
     </div>
 
     <!-- Mobile Menu -->
-    <nav id="mobileMenu" class="absolute top-16 left-0 w-full bg-white py-4 shadow-md text-center">
+    <nav id="mobileMenu" class="hidden absolute top-16 left-0 w-full bg-white py-4 shadow-md text-center">
         <a href="index.html" class="block py-2 hover:text-blue-600">Home</a>
         <a href="about.html" class="block py-2 hover:text-blue-600">About</a>
         <a href="services.html" class="block py-2 hover:text-blue-600">Services</a>
@@ -64,7 +50,6 @@
   <section class="h-screen w-full flex flex-col items-center justify-center text-white text-center px-6 bg-cover bg-center bg-no-repeat relative" 
       style="background-image: url('https://media.istockphoto.com/id/1297349747/photo/hot-air-balloons-flying-over-the-botan-canyon-in-turkey.jpg?s=612x612&w=0&k=20&c=kt8-RRzCDunpxgKFMBBjZ6jSteetNhhSxHZFvHQ0hNU=');">
     
-    <!-- Glassmorphism Effect -->
     <div class="bg-white bg-opacity-10 backdrop-blur-lg p-6 md:p-10 rounded-lg shadow-lg max-w-xl">
         <h1 class="text-4xl md:text-5xl font-bold">Explore Breathtaking Destinations</h1>
         <p class="mt-4 text-lg">Discover unforgettable experiences with TravelX.</p>
@@ -75,10 +60,10 @@
 
   </section>
 
-  <!-- JavaScript for Mobile Menu -->
-  <script src="script.js">
-  </script>
 
+  <script src="script.js"> 
+   
+  </script>
 
 </body>
 </html>
